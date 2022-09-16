@@ -3,20 +3,6 @@ let from = document.getElementById("from");
 let to = document.getElementById("to");
 let result = document.getElementById("result");
 
-// function createOption(x, y, z) {
-//   let opt = document.createElement("option");
-//   let content = document.createTextNode(y);
-//   opt.setAttribute("value", NumConverter(z));
-//   opt.appendChild(content);
-//   x.appendChild(opt);
-// }
-
-// function NumConverter(x) {
-//   return Number(x.replace(",", ""));
-// }
-
-// createOption(from, JPY, 27);
-// createOption(to, MMK, 1);
 
 document.getElementById("calc").addEventListener("submit", function (e) {
   e.preventDefault();
