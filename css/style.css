@@ -146,3 +146,65 @@ select{
 select:focus,input:focus,button:focus{
     outline: none;
 }
+
+@media only screen and (max-width: 900px) {
+    .app{
+        width: 100%;
+    }
+    /* .output{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    
+    /* .brand-container{
+        display: flex;
+        align-items: center;
+    } */
+    
+    .logo{
+        width: 50px;
+        border-radius: 10px;
+    }
+    
+    .brand{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    
+    .result-container{
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    
+    .result{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .from-container,.to-container{
+
+        display: none;
+    }
+    .calc{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .container{
+        width: 200px;
+    }
+    .calc-btn{
+        width: 100px;
+        margin-left: 60px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .calc-btn:active{
+        background-color: var(--primary-soft);
+        border: none;
+    }
+}
