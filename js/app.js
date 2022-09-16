@@ -15,27 +15,23 @@ let result = document.getElementById("result");
 //   return Number(x.replace(",", ""));
 // }
 
-// for (x in rate.rates) {
-//   createOption(from, x, rate.rates[x]);
-//   createOption(to, x, rate.rates[x]);
-// }
+// createOption(from, JPY, 27);
+// createOption(to, MMK, 1);
 
-document.getElementById("calc").addEventListener("submit", function(e){
-    e.preventDefault();
+document.getElementById("calc").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    let x = input.value;
-    let y = from.value;
+  let x = input.value;
+  let y = 27;
 
-    // convert to MMK 
-    let mmk = x * y;
+  // convert to MMK
+  let mmk = x * y;
 
-    //convert to desired currency
-    let final = mmk + 3500;
-    
-    // show result
-    result.innerHTML = final + " kyats";
-    input.focus();
-    from.value= "27";
-    to.value = "1";
-})
+  //convert to desired currency
+  let final = mmk + 3500;
+
+  // show result
+  result.innerHTML = final + " kyats";
+  input.focus();
+});
   
